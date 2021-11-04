@@ -1,9 +1,0 @@
-﻿{
-  "agentId": 2,
-  "agentName": "danial",
-  "poolId": 1,
-  "poolName": "Default",
-  "serverUrl": "https://pipelines.actions.githubusercontent.com/3Cq5c3aTxGm2wRHAIsnzximDJvt6JwcVpROYzZdQaczW0NDcIS",
-  "gitHubUrl": "https://github.com/jaeckanaquth/screen_stocks",
-  "workFolder": "stocks"
-}
