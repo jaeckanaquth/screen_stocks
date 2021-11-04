@@ -22,5 +22,4 @@ dependencies:
     - yahoo-fin
     - yfinance
     - pandas_datareader
-    - wordpress_xmlrpc
 prefix: C:\Users\jaeck\anaconda3\envs\stocks
