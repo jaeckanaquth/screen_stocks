@@ -131,6 +131,7 @@ def scr(stock_df, df, index_name):
             print("Error Ouccured: " + str(e))
             time.sleep(10)
     try:
+        print(stock_df)
         return stock_df
     except:
         print("Someting went wrong")

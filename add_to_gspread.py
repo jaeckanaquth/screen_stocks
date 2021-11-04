@@ -37,12 +37,12 @@ df = pd.read_csv(
     'https://www1.nseindia.com/content/indices/ind_nifty50list.csv')
 index_name = '^NSEI'  # S&P 500
 published = screener.scr(stock_df, df, index_name)
-if stock_df.shape[0] == 0:
-    count = 1
-    header = "Second best Stocks of the Day"
-    df = pd.read_csv('https://www1.nseindia.com/content/indices/ind_nifty500list.csv')
-    index_name = '^CRSLDX'  # S&P 500
-    published = screener.scr(stock_df, df, index_name)
+# if stock_df.shape[0] == 0:
+#     count = 1
+#     header = "Second best Stocks of the Day"
+#     df = pd.read_csv('https://www1.nseindia.com/content/indices/ind_nifty500list.csv')
+#     index_name = '^CRSLDX'  # S&P 500
+#     published = screener.scr(stock_df, df, index_name)
 if stock_df.shape[0] == 0:
     count = 2
     header = "This is just Nifity 50"
