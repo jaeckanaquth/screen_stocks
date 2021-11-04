@@ -6,7 +6,7 @@ on:
       - cron: '0 0 * * *'
 jobs:
   Screening:
-    runs-on: [ubuntu-latest, self-hosted, windows-latest]
+    runs-on: self-hosted
     strategy:
       max-parallel: 5
 
