@@ -1,0 +1,8 @@
+#config
+config.*
+nu_config.*
+*.json
+geck*
+
+#vs things
+__pycache__
