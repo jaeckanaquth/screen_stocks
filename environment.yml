@@ -21,4 +21,5 @@ dependencies:
     - gspread-dataframe
     - yahoo-fin
     - yfinance
+    - pandas_datareader
 prefix: C:\Users\jaeck\anaconda3\envs\stocks
