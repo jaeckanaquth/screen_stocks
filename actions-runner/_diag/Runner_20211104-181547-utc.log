@@ -1,0 +1,263 @@
+[2021-11-04 18:15:47Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2021-11-04 18:15:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\jaeck\Documents\personal_workspace\screen_stocks\actions-runner\bin'
+[2021-11-04 18:15:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\jaeck\Documents\personal_workspace\screen_stocks\actions-runner'
+[2021-11-04 18:15:47Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\jaeck\Documents\personal_workspace\screen_stocks\actions-runner\.credentials'
+[2021-11-04 18:15:47Z INFO Listener] Runner is built for Windows (X64) - win-x64.
+[2021-11-04 18:15:47Z INFO Listener] RuntimeInformation: Microsoft Windows 10.0.19043.
+[2021-11-04 18:15:47Z INFO Listener] Version: 2.284.0
+[2021-11-04 18:15:47Z INFO Listener] Commit: 9027c154d05776c16f6df6c0345bc9ec20440ebe
+[2021-11-04 18:15:47Z INFO Listener] Culture: en-IN
+[2021-11-04 18:15:47Z INFO Listener] UI Culture: en-US
+[2021-11-04 18:15:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\jaeck\Documents\personal_workspace\screen_stocks\actions-runner\bin'
+[2021-11-04 18:15:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\jaeck\Documents\personal_workspace\screen_stocks\actions-runner'
+[2021-11-04 18:15:47Z INFO Listener] Validating directory permissions for: 'C:\Users\jaeck\Documents\personal_workspace\screen_stocks\actions-runner'
+[2021-11-04 18:15:47Z INFO CommandLineParser] Parse
+[2021-11-04 18:15:47Z INFO CommandLineParser] Parsing 5 args
+[2021-11-04 18:15:47Z INFO CommandLineParser] parsing argument
+[2021-11-04 18:15:47Z INFO CommandLineParser] HasArgs: False
+[2021-11-04 18:15:47Z INFO CommandLineParser] Adding Command: configure
+[2021-11-04 18:15:47Z INFO CommandLineParser] parsing argument
+[2021-11-04 18:15:47Z INFO CommandLineParser] HasArgs: True
+[2021-11-04 18:15:47Z INFO CommandLineParser] arg: url
+[2021-11-04 18:15:47Z INFO CommandLineParser] parsing argument
+[2021-11-04 18:15:47Z INFO CommandLineParser] HasArgs: True
+[2021-11-04 18:15:47Z INFO CommandLineParser] Adding option 'url': 'https://github.com/jaeckanaquth/screen_stocks'
+[2021-11-04 18:15:47Z INFO CommandLineParser] parsing argument
+[2021-11-04 18:15:47Z INFO CommandLineParser] HasArgs: True
+[2021-11-04 18:15:47Z INFO CommandLineParser] arg: token
+[2021-11-04 18:15:47Z INFO CommandLineParser] parsing argument
+[2021-11-04 18:15:47Z INFO CommandLineParser] HasArgs: True
+[2021-11-04 18:15:47Z INFO CommandLineParser] Adding option 'token': '***'
+[2021-11-04 18:15:47Z INFO Listener] Arguments parsed
+[2021-11-04 18:15:47Z INFO Runner] ExecuteCommand
+[2021-11-04 18:15:47Z INFO ConfigurationStore] currentAssemblyLocation: C:\Users\jaeck\Documents\personal_workspace\screen_stocks\actions-runner\bin\Runner.Listener.dll
+[2021-11-04 18:15:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\jaeck\Documents\personal_workspace\screen_stocks\actions-runner\bin'
+[2021-11-04 18:15:47Z INFO ConfigurationStore] binPath: C:\Users\jaeck\Documents\personal_workspace\screen_stocks\actions-runner\bin
+[2021-11-04 18:15:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\jaeck\Documents\personal_workspace\screen_stocks\actions-runner\bin'
+[2021-11-04 18:15:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\jaeck\Documents\personal_workspace\screen_stocks\actions-runner'
+[2021-11-04 18:15:47Z INFO ConfigurationStore] RootFolder: C:\Users\jaeck\Documents\personal_workspace\screen_stocks\actions-runner
+[2021-11-04 18:15:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\jaeck\Documents\personal_workspace\screen_stocks\actions-runner\bin'
+[2021-11-04 18:15:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\jaeck\Documents\personal_workspace\screen_stocks\actions-runner'
+[2021-11-04 18:15:47Z INFO HostContext] Well known config file 'Runner': 'C:\Users\jaeck\Documents\personal_workspace\screen_stocks\actions-runner\.runner'
+[2021-11-04 18:15:47Z INFO ConfigurationStore] ConfigFilePath: C:\Users\jaeck\Documents\personal_workspace\screen_stocks\actions-runner\.runner
+[2021-11-04 18:15:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\jaeck\Documents\personal_workspace\screen_stocks\actions-runner\bin'
+[2021-11-04 18:15:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\jaeck\Documents\personal_workspace\screen_stocks\actions-runner'
+[2021-11-04 18:15:47Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\jaeck\Documents\personal_workspace\screen_stocks\actions-runner\.credentials'
+[2021-11-04 18:15:47Z INFO ConfigurationStore] CredFilePath: C:\Users\jaeck\Documents\personal_workspace\screen_stocks\actions-runner\.credentials
+[2021-11-04 18:15:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\jaeck\Documents\personal_workspace\screen_stocks\actions-runner\bin'
+[2021-11-04 18:15:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\jaeck\Documents\personal_workspace\screen_stocks\actions-runner'
+[2021-11-04 18:15:47Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\Users\jaeck\Documents\personal_workspace\screen_stocks\actions-runner\.credentials_migrated'
+[2021-11-04 18:15:47Z INFO ConfigurationStore] MigratedCredFilePath: C:\Users\jaeck\Documents\personal_workspace\screen_stocks\actions-runner\.credentials_migrated
+[2021-11-04 18:15:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\jaeck\Documents\personal_workspace\screen_stocks\actions-runner\bin'
+[2021-11-04 18:15:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\jaeck\Documents\personal_workspace\screen_stocks\actions-runner'
+[2021-11-04 18:15:47Z INFO HostContext] Well known config file 'Service': 'C:\Users\jaeck\Documents\personal_workspace\screen_stocks\actions-runner\.service'
+[2021-11-04 18:15:47Z INFO ConfigurationStore] ServiceConfigFilePath: C:\Users\jaeck\Documents\personal_workspace\screen_stocks\actions-runner\.service
+[2021-11-04 18:15:47Z INFO CommandSettings] Flag 'help': 'False'
+[2021-11-04 18:15:47Z INFO CommandSettings] Flag 'version': 'False'
+[2021-11-04 18:15:47Z INFO CommandSettings] Flag 'commit': 'False'
+[2021-11-04 18:15:47Z INFO CommandSettings] Flag 'check': 'False'
+[2021-11-04 18:15:47Z INFO CommandSettings] Command 'configure': 'True'
+[2021-11-04 18:15:47Z INFO Terminal] WRITE LINE: 
+[2021-11-04 18:15:47Z INFO Terminal] WRITE LINE: --------------------------------------------------------------------------------
+[2021-11-04 18:15:47Z INFO Terminal] WRITE LINE: |        ____ _ _   _   _       _          _        _   _                      |
+[2021-11-04 18:15:47Z INFO Terminal] WRITE LINE: |       / ___(_) |_| | | |_   _| |__      / \   ___| |_(_) ___  _ __  ___      |
+[2021-11-04 18:15:47Z INFO Terminal] WRITE LINE: |      | |  _| | __| |_| | | | | '_ \    / _ \ / __| __| |/ _ \| '_ \/ __|     |
+[2021-11-04 18:15:47Z INFO Terminal] WRITE LINE: |      | |_| | | |_|  _  | |_| | |_) |  / ___ \ (__| |_| | (_) | | | \__ \     |
+[2021-11-04 18:15:47Z INFO Terminal] WRITE LINE: |       \____|_|\__|_| |_|\__,_|_.__/  /_/   \_\___|\__|_|\___/|_| |_|___/     |
+[2021-11-04 18:15:47Z INFO Terminal] WRITE LINE: |                                                                              |
+[2021-11-04 18:15:47Z INFO Terminal] WRITE: |                       
+[2021-11-04 18:15:47Z INFO Terminal] WRITE: Self-hosted runner registration
+[2021-11-04 18:15:47Z INFO Terminal] WRITE LINE:                         |
+[2021-11-04 18:15:47Z INFO Terminal] WRITE LINE: |                                                                              |
+[2021-11-04 18:15:47Z INFO Terminal] WRITE LINE: --------------------------------------------------------------------------------
+[2021-11-04 18:15:47Z INFO ConfigurationManager] ConfigureAsync
+[2021-11-04 18:15:47Z INFO ConfigurationStore] IsConfigured()
+[2021-11-04 18:15:47Z INFO ConfigurationStore] IsConfigured: False
+[2021-11-04 18:15:47Z INFO ConfigurationManager] Is configured: False
+[2021-11-04 18:15:47Z INFO CommandSettings] Arg 'url': 'https://github.com/jaeckanaquth/screen_stocks'
+[2021-11-04 18:15:47Z INFO CommandSettings] Remove url from Arg dictionary.
+[2021-11-04 18:15:47Z INFO CommandSettings] Arg 'token': '***'
+[2021-11-04 18:15:47Z INFO CommandSettings] Remove token from Arg dictionary.
+[2021-11-04 18:15:48Z INFO ConfigurationManager] Http response code: OK from 'POST https://api.github.com/actions/runner-registration'
+[2021-11-04 18:15:48Z INFO ConfigurationManager] cred retrieved via GitHub auth
+[2021-11-04 18:15:48Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2021-11-04 18:15:48Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2021-11-04 18:15:48Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2021-11-04 18:15:48Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2021-11-04 18:15:48Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2021-11-04 18:15:48Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2021-11-04 18:15:48Z WARN GitHubActionsService] Attempt 1 of GET request to https://pipelines.actions.githubusercontent.com/3Cq5c3aTxGm2wRHAIsnzximDJvt6JwcVpROYzZdQaczW0NDcIS/_apis/connectionData?connectOptions=1&lastChangeId=-1&lastChangeId64=-1 failed (Socket Error: ConnectionReset). The operation will be retried in 11.156 seconds.
+[2021-11-04 18:15:48Z WARN GitHubActionsService] Attempt 1 of GET request to https://pipelines.actions.githubusercontent.com/3Cq5c3aTxGm2wRHAIsnzximDJvt6JwcVpROYzZdQaczW0NDcIS/_apis/connectionData?connectOptions=1&lastChangeId=-1&lastChangeId64=-1 failed (Socket Error: ConnectionReset). The operation will be retried in 11.147 seconds.
+[2021-11-04 18:15:50Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2021-11-04 18:16:00Z WARN GitHubActionsService] Attempt 2 of GET request to https://pipelines.actions.githubusercontent.com/3Cq5c3aTxGm2wRHAIsnzximDJvt6JwcVpROYzZdQaczW0NDcIS/_apis/connectionData?connectOptions=1&lastChangeId=-1&lastChangeId64=-1 failed (Socket Error: ConnectionReset). The operation will be retried in 12.565 seconds.
+[2021-11-04 18:16:01Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2021-11-04 18:16:12Z WARN GitHubActionsService] Attempt 3 of GET request to https://pipelines.actions.githubusercontent.com/3Cq5c3aTxGm2wRHAIsnzximDJvt6JwcVpROYzZdQaczW0NDcIS/_apis/connectionData?connectOptions=1&lastChangeId=-1&lastChangeId64=-1 failed (Socket Error: ConnectionReset). The operation will be retried in 17.861 seconds.
+[2021-11-04 18:16:30Z ERR  GitHubActionsService] Attempt 4 of GET request to https://pipelines.actions.githubusercontent.com/3Cq5c3aTxGm2wRHAIsnzximDJvt6JwcVpROYzZdQaczW0NDcIS/_apis/connectionData?connectOptions=1&lastChangeId=-1&lastChangeId64=-1 failed (Socket Error: ConnectionReset). The maximum number of attempts has been reached.
+[2021-11-04 18:16:30Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2021-11-04 18:16:30Z INFO RunnerServer] Catch exception during connect. 4 attempt left.
+[2021-11-04 18:16:30Z ERR  RunnerServer] System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.GetResult(Int16 token)
+   at System.Net.FixedSizeReader.ReadPacketAsync(Stream transport, AsyncProtocolRequest request)
+   at System.Net.Security.SslStream.InternalEndProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.Security.SslStream.EndProcessAuthentication(IAsyncResult result)
+   at System.Net.Security.SslStream.EndAuthenticateAsClient(IAsyncResult asyncResult)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsClientAsync>b__65_1(IAsyncResult iar)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync[T](HttpRequestMessage message, Object userState, CancellationToken cancellationToken)
+   at GitHub.Services.Location.Client.LocationHttpClient.GetConnectionDataAsync(ConnectOptions connectOptions, Int64 lastChangeId, CancellationToken cancellationToken, Object userState)
+   at GitHub.Services.WebApi.Location.VssServerDataProvider.GetConnectionDataAsync(ConnectOptions connectOptions, Int32 lastChangeId, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.Location.VssServerDataProvider.ConnectAsync(ConnectOptions connectOptions, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.RunnerServer.EstablishVssConnection(Uri serverUrl, VssCredentials credentials, TimeSpan timeout)
+[2021-11-04 18:16:30Z ERR  RunnerServer] #####################################################
+[2021-11-04 18:16:30Z ERR  RunnerServer] System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.GetResult(Int16 token)
+   at System.Net.FixedSizeReader.ReadPacketAsync(Stream transport, AsyncProtocolRequest request)
+   at System.Net.Security.SslStream.InternalEndProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.Security.SslStream.EndProcessAuthentication(IAsyncResult result)
+   at System.Net.Security.SslStream.EndAuthenticateAsClient(IAsyncResult asyncResult)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsClientAsync>b__65_1(IAsyncResult iar)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+[2021-11-04 18:16:30Z ERR  RunnerServer] #####################################################
+[2021-11-04 18:16:30Z ERR  RunnerServer] System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+[2021-11-04 18:16:31Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2021-11-04 18:16:32Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2021-11-04 18:16:32Z INFO Terminal] WRITE LINE: 
+[2021-11-04 18:16:32Z INFO ConfigurationManager] Test Connection complete.
+[2021-11-04 18:16:32Z INFO HostContext] Well known directory 'Bin': 'C:\Users\jaeck\Documents\personal_workspace\screen_stocks\actions-runner\bin'
+[2021-11-04 18:16:32Z INFO HostContext] Well known directory 'Root': 'C:\Users\jaeck\Documents\personal_workspace\screen_stocks\actions-runner'
+[2021-11-04 18:16:32Z INFO HostContext] Well known config file 'RSACredentials': 'C:\Users\jaeck\Documents\personal_workspace\screen_stocks\actions-runner\.credentials_rsaparams'
+[2021-11-04 18:16:32Z INFO RSAEncryptedFileKeyManager] Creating new RSA key using 2048-bit key length
+[2021-11-04 18:16:32Z INFO RSAEncryptedFileKeyManager] Successfully saved RSA key parameters to file C:\Users\jaeck\Documents\personal_workspace\screen_stocks\actions-runner\.credentials_rsaparams
+[2021-11-04 18:16:32Z INFO CommandSettings] Arg 'runnergroup': ''
+[2021-11-04 18:16:32Z INFO CommandSettings] Flag 'unattended': 'False'
+[2021-11-04 18:16:32Z INFO PromptManager] ReadValue
+[2021-11-04 18:16:32Z INFO Terminal] WRITE: Enter the name of the runner group to add this runner to: 
+[2021-11-04 18:16:32Z INFO Terminal] WRITE: [press Enter for Default] 
+[2021-11-04 18:16:32Z INFO Terminal] READ LINE
+[2021-11-04 18:16:32Z INFO Terminal] Read value: ''
+[2021-11-04 18:16:32Z INFO PromptManager] Falling back to the default: 'Default'
+[2021-11-04 18:16:32Z INFO Terminal] WRITE LINE: 
+[2021-11-04 18:16:32Z INFO ConfigurationManager] Found a self-hosted runner group with id 1 and name Default
+[2021-11-04 18:16:32Z INFO CommandSettings] Flag 'ephemeral': 'False'
+[2021-11-04 18:16:32Z INFO CommandSettings] Arg 'name': ''
+[2021-11-04 18:16:32Z INFO CommandSettings] Flag 'unattended': 'False'
+[2021-11-04 18:16:32Z INFO PromptManager] ReadValue
+[2021-11-04 18:16:32Z INFO Terminal] WRITE: Enter the name of runner: 
+[2021-11-04 18:16:32Z INFO Terminal] WRITE: [press Enter for DESKTOP-307K51S] 
+[2021-11-04 18:16:32Z INFO Terminal] READ LINE
+[2021-11-04 18:16:38Z INFO Terminal] Read value: './run.cmd'
+[2021-11-04 18:16:38Z INFO Terminal] WRITE LINE: 
+[2021-11-04 18:16:38Z INFO CommandSettings] Arg 'labels': ''
+[2021-11-04 18:16:38Z INFO CommandSettings] Flag 'unattended': 'False'
+[2021-11-04 18:16:38Z INFO PromptManager] ReadValue
+[2021-11-04 18:16:38Z INFO Terminal] WRITE: This runner will have the following labels: 'self-hosted', 'Windows', 'X64' 
+Enter any additional labels (ex. label-1,label-2): 
+[2021-11-04 18:16:38Z INFO Terminal] WRITE: [press Enter to skip] 
+[2021-11-04 18:16:38Z INFO Terminal] READ LINE
+[2021-11-04 18:17:00Z INFO Terminal] Read value: 'danial'
+[2021-11-04 18:17:00Z INFO Terminal] WRITE LINE: 
+[2021-11-04 18:17:00Z ERR  GitHubActionsService] POST request to https://pipelines.actions.githubusercontent.com/3Cq5c3aTxGm2wRHAIsnzximDJvt6JwcVpROYzZdQaczW0NDcIS/_apis/distributedtask/pools/1/agents failed. HTTP Status: BadRequest, AFD Ref: Ref A: 4FEEFE47535D4772A2A32AF4A391B303 Ref B: BOM02EDGE0408 Ref C: 2021-11-04T18:17:01Z
+[2021-11-04 18:17:00Z INFO CommandSettings] Flag 'unattended': 'False'
+[2021-11-04 18:17:00Z ERR  Terminal] WRITE ERROR (exception):
+[2021-11-04 18:17:00Z ERR  Terminal] GitHub.Services.WebApi.VssServiceResponseException: The runner name './run.cmd' is not valid. A valid runner name is 64 characters or less in length and does not include '"', '/', ':', '<', '>', '\', '|', '*' and '?'. (Parameter 'agent.Name')
+ ---> System.ArgumentException: The runner name './run.cmd' is not valid. A valid runner name is 64 characters or less in length and does not include '"', '/', ':', '<', '>', '\', '|', '*' and '?'. (Parameter 'agent.Name')
+   --- End of inner exception stack trace ---
+   at GitHub.Services.WebApi.VssHttpClientBase.HandleResponseAsync(HttpResponseMessage response, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync[T](HttpRequestMessage message, Object userState, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Guid locationId, Object routeValues, ApiResourceVersion version, HttpContent content, IEnumerable`1 queryParameters, Object userState, CancellationToken cancellationToken)
+   at GitHub.Runner.Listener.Configuration.ConfigurationManager.ConfigureAsync(CommandSettings command)
+[2021-11-04 18:17:00Z ERR  Terminal] #####################################################
+[2021-11-04 18:17:00Z ERR  Terminal] System.ArgumentException: The runner name './run.cmd' is not valid. A valid runner name is 64 characters or less in length and does not include '"', '/', ':', '<', '>', '\', '|', '*' and '?'. (Parameter 'agent.Name')
+[2021-11-04 18:17:00Z ERR  Terminal] WRITE ERROR: Failed to add the runner. Try again or ctrl-c to quit
+[2021-11-04 18:17:00Z INFO CommandSettings] Flag 'ephemeral': 'False'
+[2021-11-04 18:17:00Z INFO CommandSettings] Arg 'name': ''
+[2021-11-04 18:17:00Z INFO CommandSettings] Flag 'unattended': 'False'
+[2021-11-04 18:17:00Z INFO PromptManager] ReadValue
+[2021-11-04 18:17:00Z INFO Terminal] WRITE: Enter the name of runner: 
+[2021-11-04 18:17:00Z INFO Terminal] WRITE: [press Enter for DESKTOP-307K51S] 
+[2021-11-04 18:17:00Z INFO Terminal] READ LINE
+[2021-11-04 18:17:12Z INFO Terminal] Read value: 'danial'
+[2021-11-04 18:17:12Z INFO Terminal] WRITE LINE: 
+[2021-11-04 18:17:12Z INFO CommandSettings] Arg 'labels': ''
+[2021-11-04 18:17:12Z INFO CommandSettings] Flag 'unattended': 'False'
+[2021-11-04 18:17:12Z INFO PromptManager] ReadValue
+[2021-11-04 18:17:12Z INFO Terminal] WRITE: This runner will have the following labels: 'self-hosted', 'Windows', 'X64' 
+Enter any additional labels (ex. label-1,label-2): 
+[2021-11-04 18:17:12Z INFO Terminal] WRITE: [press Enter to skip] 
+[2021-11-04 18:17:12Z INFO Terminal] READ LINE
+[2021-11-04 18:17:17Z INFO Terminal] Read value: ''
+[2021-11-04 18:17:17Z INFO Terminal] WRITE LINE: 
+[2021-11-04 18:17:19Z INFO ConfigurationStore] Saving OAuth credential @ C:\Users\jaeck\Documents\personal_workspace\screen_stocks\actions-runner\.credentials
+[2021-11-04 18:17:19Z INFO ConfigurationStore] Credentials Saved.
+[2021-11-04 18:17:19Z INFO ConfigurationStore] HasCredentials()
+[2021-11-04 18:17:19Z INFO ConfigurationStore] stored True
+[2021-11-04 18:17:19Z INFO CredentialManager] GetCredentialProvider
+[2021-11-04 18:17:19Z INFO CredentialManager] Creating type OAuth
+[2021-11-04 18:17:19Z INFO CredentialManager] Creating credential type: OAuth
+[2021-11-04 18:17:19Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\jaeck\Documents\personal_workspace\screen_stocks\actions-runner\.credentials_rsaparams
+[2021-11-04 18:17:19Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2021-11-04 18:17:19Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2021-11-04 18:17:19Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2021-11-04 18:17:19Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2021-11-04 18:17:19Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2021-11-04 18:17:19Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2021-11-04 18:17:19Z WARN GitHubActionsService] Attempt 1 of GET request to https://pipelines.actions.githubusercontent.com/3Cq5c3aTxGm2wRHAIsnzximDJvt6JwcVpROYzZdQaczW0NDcIS/_apis/connectionData?connectOptions=0&lastChangeId=430081&lastChangeId64=430081 failed (Socket Error: ConnectionReset). The operation will be retried in 11.048 seconds.
+[2021-11-04 18:17:20Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2021-11-04 18:17:20Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2021-11-04 18:17:31Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2021-11-04 18:17:31Z WARN GitHubActionsService] Authentication failed with status code 401.
+WWW-Authenticate: Bearer
+Strict-Transport-Security: max-age=2592000
+X-TFS-ProcessId: 62760d36-1161-4067-b8a8-90180829c951
+ActivityId: cab2e307-e5b2-45a1-8dba-fad8d2399403
+X-TFS-Session: 9b4e7ee4-deb7-414d-8196-c2913805aa2a
+X-VSS-E2EID: c32f1446-37af-45f8-b0fe-9f5010f811e9
+X-VSS-SenderDeploymentId: 63be6134-28d1-8c82-e969-91f4e88fcdec
+X-TFS-ServiceError: The+user+%27System%3aPublicAccess%3baaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27+is+not+authorized+to+access+this+resource.
+X-VSS-S2STargetService: 0000005A-0000-8888-8000-000000000000/visualstudio.com
+X-Cache: CONFIG_NOCACHE
+X-MSEdge-Ref: Ref A: B1C01E13A933473F8E3C09D4617AACE6 Ref B: BOM02EDGE0612 Ref C: 2021-11-04T18:17:32Z
+Date: Thu, 04 Nov 2021 18:17:32 GMT
+
+[2021-11-04 18:17:31Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\jaeck\Documents\personal_workspace\screen_stocks\actions-runner\.credentials_rsaparams
+[2021-11-04 18:17:31Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\jaeck\Documents\personal_workspace\screen_stocks\actions-runner\.credentials_rsaparams
+[2021-11-04 18:17:32Z WARN GitHubActionsService] Attempt 1 of POST request to https://vstoken.actions.githubusercontent.com/_apis/oauth2/token/95f79dea-6002-4535-b943-90167ba5f71b failed (Socket Error: ConnectionReset). The operation will be retried in 10.902 seconds.
+[2021-11-04 18:17:43Z WARN GitHubActionsService] Attempt 2 of POST request to https://vstoken.actions.githubusercontent.com/_apis/oauth2/token/95f79dea-6002-4535-b943-90167ba5f71b failed (Socket Error: ConnectionReset). The operation will be retried in 13.345 seconds.
+[2021-11-04 18:17:57Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2021-11-04 18:17:57Z WARN GitHubActionsService] Retrieving an AAD auth token took a long time (25.8225462 seconds)
+[2021-11-04 18:17:58Z INFO CommandSettings] Arg 'work': ''
+[2021-11-04 18:17:58Z INFO CommandSettings] Flag 'unattended': 'False'
+[2021-11-04 18:17:58Z INFO PromptManager] ReadValue
+[2021-11-04 18:17:58Z INFO Terminal] WRITE: Enter name of work folder: 
+[2021-11-04 18:17:58Z INFO Terminal] WRITE: [press Enter for _work] 
+[2021-11-04 18:17:58Z INFO Terminal] READ LINE
+[2021-11-04 18:18:26Z INFO Terminal] Read value: 'stocks'
+[2021-11-04 18:18:26Z INFO ConfigurationStore] Saving runner settings.
+[2021-11-04 18:18:26Z INFO ConfigurationStore] Settings Saved.
+[2021-11-04 18:18:26Z INFO Terminal] WRITE LINE: 
+[2021-11-04 18:18:26Z INFO Terminal] WRITE LINE: 
+[2021-11-04 18:18:26Z INFO CommandSettings] Flag 'runasservice': 'False'
+[2021-11-04 18:18:26Z INFO CommandSettings] Flag 'unattended': 'False'
+[2021-11-04 18:18:26Z INFO PromptManager] ReadValue
+[2021-11-04 18:18:26Z INFO Terminal] WRITE: Would you like to run the runner as service? (Y/N) 
+[2021-11-04 18:18:26Z INFO Terminal] WRITE: [press Enter for N] 
+[2021-11-04 18:18:26Z INFO Terminal] READ LINE
+[2021-11-04 18:18:36Z INFO Terminal] Read value: ''
+[2021-11-04 18:18:36Z INFO PromptManager] Falling back to the default: 'N'
+[2021-11-04 18:18:36Z INFO Listener] Runner execution has finished with return code 0
