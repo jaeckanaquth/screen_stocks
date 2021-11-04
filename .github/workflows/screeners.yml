@@ -1,11 +1,9 @@
 name: Python Package using Conda
 
-on:
-  push:
-    schedule:
-      - cron: '0 0 * * *'
+on: [push]
+
 jobs:
-  Screening:
+  build-linux:
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 5
