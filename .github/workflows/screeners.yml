@@ -34,5 +34,8 @@ jobs:
     - name: Set Environments
       env:
         G_SECRETS: ${{ secrets.G_SECRETS }}
+        MY_SITE: ${{ secrets.MY_SITE }}
+        WP_USER: ${{ secrets.WP_USER }}
+        WP_PASSWORD: ${{ secrets.WP_PASSWORD }}
       run: |
         python add_to_gspread.py
