@@ -46,4 +46,4 @@ jobs:
         TAG1: "IBHAJQT"
         G_SECRETS: ${{ secrets.G_SECRETS }}
       run: |
-        python add_to_gspred.py
+        python add_to_gspread.py
