@@ -4,6 +4,7 @@ import glob
 import gspread
 import gspread_dataframe as gd
 import pandas as pd
+import goes_to_wp
 from bs4 import BeautifulSoup as bs
 if glob.glob("config.py"):
     import config
@@ -35,13 +36,14 @@ df = pd.read_csv(
     'https://www1.nseindia.com/content/indices/ind_nifty50list.csv')
 index_name = '^NSEI'  # S&P 500
 published = screener.scr(stock_df, df, index_name)
-if stock_df.shape[1] == 0:
+if stock_df.shape[0] == 0:
     count = 1
     df = pd.read_csv('https://www1.nseindia.com/content/indices/ind_nifty500list.csv')
     index_name = '^CRSLDX'  # S&P 500
     published = screener.scr(stock_df, df, index_name)
-if stock_df.shape[1] == 0:
+if stock_df.shape[0] == 0:
     published = pd.read_csv(
         'https://www1.nseindia.com/content/indices/ind_nifty50list.csv')
 gd.set_with_dataframe(worksheet, published)
+goes_to_wp.posting(published.to_html())
 print(published)
