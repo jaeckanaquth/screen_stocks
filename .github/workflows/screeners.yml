@@ -33,17 +33,6 @@ jobs:
 
     - name: Set Environments
       env:
-        NU_USER: ${{ secrets.NU_USER }}
-        NU_PASSWORD: ${{ secrets.NU_PASSWORD }}
-        TRANSLATOR: ${{ secrets.TRANSLATOR }}
-        MY_SITE: ${{ secrets.MY_SITE }}
-        WP_USER: ${{ secrets.WP_USER }}
-        WP_PASSWORD: ${{ secrets.WP_PASSWORD }}
-        NOVEL_LINK: ${{ secrets.NOVEL_LINK }}
-        T_NOVEL: "https://www.mbtxt.la/go/91929/"
-        NOVEL_NAME: "I Became a Heartthrob After A Job in Quick Transmigration"
-        T_SITE: "https://www.mbtxt.la/go/"
-        TAG1: "IBHAJQT"
         G_SECRETS: ${{ secrets.G_SECRETS }}
       run: |
         python add_to_gspread.py
