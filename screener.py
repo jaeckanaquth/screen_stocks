@@ -125,11 +125,11 @@ def scr(stock_df, df, index_name):
                     stock_df = stock_df.append(dct, ignore_index=True)
                     print(stock_df)
             except Exception as e:
-                print("Error Ouccured")
-                print(e)
+                print("Error Ouccured" + str(e))
+                time.sleep(10)
         except Exception as e:
-            print("Error Ouccured")
-            print(e)
+            print("Error Ouccured: " + str(e))
+            time.sleep(10)
     try:
         return stock_df
     except:

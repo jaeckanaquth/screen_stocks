@@ -3,7 +3,7 @@ name: Screener
 on:
   push:
     schedule:
-      - cron: '0 0 * * *'
+      - cron: '0 0 * * 1-5'
 jobs:
   Screening:
     runs-on: ubuntu-latest

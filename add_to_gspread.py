@@ -31,6 +31,7 @@ try:
 except Exception as e:
     worksheet = sh.add_worksheet(title=name, rows="100", cols="2")
 
+header = "Stocks of the Day"
 stock_df = pd.DataFrame(columns=["Name", "Company"])
 df = pd.read_csv(
     'https://www1.nseindia.com/content/indices/ind_nifty50list.csv')
@@ -38,12 +39,15 @@ index_name = '^NSEI'  # S&P 500
 published = screener.scr(stock_df, df, index_name)
 if stock_df.shape[0] == 0:
     count = 1
+    header = "Second best Stocks of the Day"
     df = pd.read_csv('https://www1.nseindia.com/content/indices/ind_nifty500list.csv')
     index_name = '^CRSLDX'  # S&P 500
     published = screener.scr(stock_df, df, index_name)
 if stock_df.shape[0] == 0:
+    count = 2
+    header = "This is just Nifity 50"
     published = pd.read_csv(
         'https://www1.nseindia.com/content/indices/ind_nifty50list.csv')
 gd.set_with_dataframe(worksheet, published)
-goes_to_wp.posting(published.to_html())
+goes_to_wp.posting(header, published.to_html())
 print(published)
