@@ -78,8 +78,8 @@ if config.count == 4:
     content = content + published.to_html() + "</figure>"
     
     try:
-        goes_to_wp.posting(content)
+        posted = goes_to_wp.posting(content)
     except:
         time.sleep(20)
-        goes_to_wp.posting(content)
+        posted = goes_to_wp.posting(content)
     print(published)

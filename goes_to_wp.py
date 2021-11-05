@@ -9,11 +9,11 @@ from wordpress_xmlrpc.methods import posts, media
 from wordpress_xmlrpc.compat import xmlrpc_client
 from wordpress_xmlrpc import WordPressPost
 
-client = Client(config.my_site, config.user, config.password)
+
 
 def posting(content):
     # print(heading)
-    # heading = 'test'
+    client = Client(config.my_site, config.user, config.password)
     post = WordPressPost()
     post.title = "Stocks of the Day"
     post.terms_names = {
