@@ -58,7 +58,7 @@ if config.head == "Chosen from NIFTY 500":
         _ = screener.scr(stock_df, df, index_name)
         published = published.append(_)
         gd.set_with_dataframe(worksheet, published)
-
+content = ''
 if config.count == 4:
     name = "NIFTY 50"
     try:
