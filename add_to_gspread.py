@@ -25,8 +25,6 @@ except:
     sh = gc.create("QuthsStocks")
 
 
-stock_df = pd.DataFrame(columns=["name", "company"])
-
 if config.head == "Chosen from NIFTY 50":
     name = "NIFTY 50"
     df = pd.read_csv(
@@ -36,7 +34,7 @@ if config.head == "Chosen from NIFTY 50":
         worksheet = gc.open('QuthsStocks').worksheet(name)
     except Exception as e:
         worksheet = sh.add_worksheet(title=name, rows="100", cols="2")
-    published = screener.scr(stock_df, df, index_name)
+    published = screener.screening(df, index_name)
     gd.set_with_dataframe(worksheet, published)
 
 if config.head == "Chosen from NIFTY 500":
@@ -51,11 +49,11 @@ if config.head == "Chosen from NIFTY 500":
     except Exception as e:
         worksheet = sh.add_worksheet(title=name, rows="100", cols="2")
     if config.count == 0:
-        published = screener.scr(stock_df, df, index_name)
+        published = screener.screening(df, index_name)
         gd.set_with_dataframe(worksheet, published)
     else:
         published = pd.DataFrame(worksheet.get_all_records())
-        _ = screener.scr(stock_df, df, index_name)
+        _ = screener.screening(df, index_name)
         published = published.append(_)
         gd.set_with_dataframe(worksheet, published)
 content = ''
