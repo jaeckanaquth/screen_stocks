@@ -58,6 +58,7 @@ if config.head == "Chosen from NIFTY 500":
         _ = screener.screening(df, index_name)
         published = published.append(_)
         gd.set_with_dataframe(worksheet, published)
+
 content = ''
 if config.count == 4:
     name = "NIFTY 50"
@@ -66,16 +67,16 @@ if config.count == 4:
     except Exception as e:
         worksheet = sh.add_worksheet(title=name, rows="100", cols="7")
     published = pd.DataFrame(worksheet.get_all_records())
-    content = '<h2>Chosen from NIFTY 50</h2> <br /> <figure class="wp-block-table is-style-stripes">'
-    content = content + published.to_html() + '</figure>'
+    content = '<h3>Chosen from NIFTY 50</h3> <br /> <p><figure class="wp-block-table is-style-stripes">'
+    content = content + published.to_html() + '</figure></p>'
     name = "NIFTY 500"
     try:
         worksheet = gc.open('QuthsStocks').worksheet(name)
     except Exception as e:
         worksheet = sh.add_worksheet(title=name, rows="100", cols="7")
     published = pd.DataFrame(worksheet.get_all_records())
-    content = content + '<br /> <body> <h2>Chosen from NIFTY 500</h2> <br /> <figure class="wp-block-table is-style-stripes">'
-    content = content + published.to_html() + "</figure>"
+    content = content + '<br /> <body> <h3>Chosen from NIFTY 500</h3> <br /> <p> <figure class="wp-block-table is-style-stripes">'
+    content = content + published.to_html() + "</figure> </p>"
     
     try:
         posted = goes_to_wp.posting(content)
