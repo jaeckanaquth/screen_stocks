@@ -11,18 +11,18 @@ from wordpress_xmlrpc import WordPressPost
 
 client = Client(config.my_site, config.user, config.password)
 
-def posting(header, content):
+def posting(content):
     # print(heading)
     # heading = 'test'
     post = WordPressPost()
-    post.title = header
+    post.title = "Stocks of the Day"
     post.terms_names = {
         'post_tag': ["code", "python"],
         'category': ["stock codes"],
     }
     post.content = content
     post.mime_type = "text/html"
-    post.id = client.call(posts.NewPost(post))
+    post.id = 1553
     post.date = datetime.now() + timedelta(days=7)
     post.post_status = 'publish'
     client.call(posts.EditPost(post.id, post))

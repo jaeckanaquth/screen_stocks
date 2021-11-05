@@ -12,8 +12,6 @@ else:
     import github_config as config
 
 user_agent = {'User-Agent': 'Mozilla/5.0'}
-name = "Stock of the Day"
-count = 0
 
 if not glob.glob("service_account.json"):
     service_account = json.loads(config.service_account)
@@ -26,28 +24,58 @@ try:
 except:
     sh = gc.create("QuthsStocks")
 
-try:
-    worksheet = gc.open('QuthsStocks').worksheet(name)
-except Exception as e:
-    worksheet = sh.add_worksheet(title=name, rows="100", cols="2")
 
-header = "Stocks of the Day"
 stock_df = pd.DataFrame(columns=["Name", "Company"])
-df = pd.read_csv(
-    'https://www1.nseindia.com/content/indices/ind_nifty50list.csv')
-index_name = '^NSEI'  # S&P 500
-published = screener.scr(stock_df, df, index_name)
-# if stock_df.shape[0] == 0:
-#     count = 1
-#     header = "Second best Stocks of the Day"
-#     df = pd.read_csv('https://www1.nseindia.com/content/indices/ind_nifty500list.csv')
-#     index_name = '^CRSLDX'  # S&P 500
-#     published = screener.scr(stock_df, df, index_name)
-if stock_df.shape[0] == 0:
-    count = 2
-    header = "This is just Nifity 50"
-    published = pd.read_csv(
+
+if config.head == "Chosen from NIFTY 50":
+    name = "NIFTY 50"
+    df = pd.read_csv(
         'https://www1.nseindia.com/content/indices/ind_nifty50list.csv')
-gd.set_with_dataframe(worksheet, published)
-goes_to_wp.posting(header, published.to_html())
-print(published)
+    index_name = '^NSEI'
+    try:
+        worksheet = gc.open('QuthsStocks').worksheet(name)
+    except Exception as e:
+        worksheet = sh.add_worksheet(title=name, rows="100", cols="2")
+    published = screener.scr(stock_df, df, index_name)
+    gd.set_with_dataframe(worksheet, published)
+
+if config.head == "Chosen from NIFTY 500":
+    name = "NIFTY 500"
+    df = pd.read_csv(
+        'https://www1.nseindia.com/content/indices/ind_nifty500list.csv')
+    count_to = config.count + 100
+    df = df[config.count:count_to]
+    index_name = '^CRSLDX'
+    try:
+        worksheet = gc.open('QuthsStocks').worksheet(name)
+    except Exception as e:
+        worksheet = sh.add_worksheet(title=name, rows="100", cols="2")
+    if config.count == 0:
+        published = screener.scr(stock_df, df, index_name)
+        gd.set_with_dataframe(worksheet, published)
+    else:
+        published = pd.DataFrame(worksheet.get_all_records())
+        _ = screener.scr(stock_df, df, index_name)
+        published = published.append(_)
+        gd.set_with_dataframe(worksheet, published)
+
+if config.count == 4:
+    name = "NIFTY 50"
+    try:
+        worksheet = gc.open('QuthsStocks').worksheet(name)
+    except Exception as e:
+        worksheet = sh.add_worksheet(title=name, rows="100", cols="2")
+    published = pd.DataFrame(worksheet.get_all_records())
+    content = "<body> <h1 Chosen from NIFTY 50 /> <br />"
+    content = content + published.to_html()
+    name = "NIFTY 500"
+    try:
+        worksheet = gc.open('QuthsStocks').worksheet(name)
+    except Exception as e:
+        worksheet = sh.add_worksheet(title=name, rows="100", cols="2")
+    published = pd.DataFrame(worksheet.get_all_records())
+    content = content + "<br /> <body> <h1 Chosen from NIFTY 500 /> <br />"
+    content = content + published.to_html() + "</body>"
+
+    goes_to_wp.posting(content)
+    print(published)

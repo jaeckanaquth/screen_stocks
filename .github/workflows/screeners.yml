@@ -5,7 +5,7 @@ on:
     schedule:
       - cron: '0 0 * * 1-5'
 jobs:
-  Screening:
+  Nifty-50:
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 1
@@ -37,5 +37,7 @@ jobs:
         MY_SITE: ${{ secrets.MY_SITE }}
         WP_USER: ${{ secrets.WP_USER }}
         WP_PASSWORD: ${{ secrets.WP_PASSWORD }}
+        HEAD: "Chosen from NIFTY 50"
+        COUNT: 0
       run: |
         python add_to_gspread.py
