@@ -43,8 +43,8 @@ if config.head == "Chosen from NIFTY 500":
     name = "NIFTY 500"
     df = pd.read_csv(
         'https://www1.nseindia.com/content/indices/ind_nifty500list.csv')
-    count_to = config.count + 100
-    df = df[config.count:count_to]
+    count_to = config.count * 100 + 100
+    df = df[config.count * 100:count_to]
     index_name = '^CRSLDX'
     try:
         worksheet = gc.open('QuthsStocks').worksheet(name)
