@@ -32,8 +32,9 @@ if config.head == "Chosen from NIFTY 50":
     index_name = '^NSEI'
     try:
         worksheet = gc.open('QuthsStocks').worksheet(name)
+        worksheet.clear()
     except Exception as e:
-        worksheet = sh.add_worksheet(title=name, rows="100", cols="2")
+        worksheet = sh.add_worksheet(title=name, rows="100", cols="7")
     published = screener.screening(df, index_name)
     gd.set_with_dataframe(worksheet, published)
 
@@ -47,8 +48,9 @@ if config.head == "Chosen from NIFTY 500":
     try:
         worksheet = gc.open('QuthsStocks').worksheet(name)
     except Exception as e:
-        worksheet = sh.add_worksheet(title=name, rows="100", cols="2")
+        worksheet = sh.add_worksheet(title=name, rows="100", cols="7")
     if config.count == 0:
+        worksheet.clear()
         published = screener.screening(df, index_name)
         gd.set_with_dataframe(worksheet, published)
     else:
@@ -62,7 +64,7 @@ if config.count == 4:
     try:
         worksheet = gc.open('QuthsStocks').worksheet(name)
     except Exception as e:
-        worksheet = sh.add_worksheet(title=name, rows="100", cols="2")
+        worksheet = sh.add_worksheet(title=name, rows="100", cols="7")
     published = pd.DataFrame(worksheet.get_all_records())
     content = '<h2>Chosen from NIFTY 50</h2> <br /> <figure class="wp-block-table is-style-stripes">'
     content = content + published.to_html() + '</figure>'
@@ -70,7 +72,7 @@ if config.count == 4:
     try:
         worksheet = gc.open('QuthsStocks').worksheet(name)
     except Exception as e:
-        worksheet = sh.add_worksheet(title=name, rows="100", cols="2")
+        worksheet = sh.add_worksheet(title=name, rows="100", cols="7")
     published = pd.DataFrame(worksheet.get_all_records())
     content = content + '<br /> <body> <h2>Chosen from NIFTY 500</h2> <br /> <figure class="wp-block-table is-style-stripes">'
     content = content + published.to_html() + "</figure>"
