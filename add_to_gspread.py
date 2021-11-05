@@ -66,16 +66,17 @@ if config.count == 4:
     except Exception as e:
         worksheet = sh.add_worksheet(title=name, rows="100", cols="2")
     published = pd.DataFrame(worksheet.get_all_records())
-    content = "<body> <h1 Chosen from NIFTY 50 /> <br />"
-    content = content + published.to_html()
+    content = '<h2>Chosen from NIFTY 50</h2> <br /> <figure class="wp-block-table">'
+    content = content + published.to_html() + '</figure>'
     name = "NIFTY 500"
     try:
         worksheet = gc.open('QuthsStocks').worksheet(name)
     except Exception as e:
         worksheet = sh.add_worksheet(title=name, rows="100", cols="2")
     published = pd.DataFrame(worksheet.get_all_records())
-    content = content + "<br /> <body> <h1 Chosen from NIFTY 500 /> <br />"
-    content = content + published.to_html() + "</body>"
+    content = content + '<br /> <body> <h2>Chosen from NIFTY 500</h2> <br /> <figure class="wp-block-table">'
+    content = content + published.to_html() + "</figure>"
+    
 
     goes_to_wp.posting(content)
     print(published)

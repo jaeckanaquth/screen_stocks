@@ -95,7 +95,7 @@ def scr(stock_df, df, index_name):
                     na = na.replace("'","")
                     dct = {"name":stock, "company": na }
                     stock_df = stock_df.append(dct, ignore_index=True)
-                    print(stock_df)
+                    # print(stock_df)
             except Exception as e:
                 print("Error Ouccured" + str(e))
                 time.sleep(10)
