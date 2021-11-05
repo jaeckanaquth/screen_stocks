@@ -25,7 +25,7 @@ except:
     sh = gc.create("QuthsStocks")
 
 
-stock_df = pd.DataFrame(columns=["Name", "Company"])
+stock_df = pd.DataFrame(columns=["name", "company"])
 
 if config.head == "Chosen from NIFTY 50":
     name = "NIFTY 50"
