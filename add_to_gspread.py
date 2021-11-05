@@ -66,7 +66,7 @@ if config.count == 4:
     except Exception as e:
         worksheet = sh.add_worksheet(title=name, rows="100", cols="2")
     published = pd.DataFrame(worksheet.get_all_records())
-    content = '<h2>Chosen from NIFTY 50</h2> <br /> <figure class="wp-block-table">'
+    content = '<h2>Chosen from NIFTY 50</h2> <br /> <figure class="wp-block-table is-style-stripes">'
     content = content + published.to_html() + '</figure>'
     name = "NIFTY 500"
     try:
@@ -74,7 +74,7 @@ if config.count == 4:
     except Exception as e:
         worksheet = sh.add_worksheet(title=name, rows="100", cols="2")
     published = pd.DataFrame(worksheet.get_all_records())
-    content = content + '<br /> <body> <h2>Chosen from NIFTY 500</h2> <br /> <figure class="wp-block-table">'
+    content = content + '<br /> <body> <h2>Chosen from NIFTY 500</h2> <br /> <figure class="wp-block-table is-style-stripes">'
     content = content + published.to_html() + "</figure>"
     
     try:
