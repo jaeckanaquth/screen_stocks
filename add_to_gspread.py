@@ -1,4 +1,4 @@
-import json
+import json, time
 import screener
 import glob
 import gspread
@@ -77,6 +77,9 @@ if config.count == 4:
     content = content + '<br /> <body> <h2>Chosen from NIFTY 500</h2> <br /> <figure class="wp-block-table">'
     content = content + published.to_html() + "</figure>"
     
-
-    goes_to_wp.posting(content)
+    try:
+        goes_to_wp.posting(content)
+    except:
+        time.sleep(20)
+        goes_to_wp.posting(content)
     print(published)
