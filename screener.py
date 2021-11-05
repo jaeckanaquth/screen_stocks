@@ -99,9 +99,11 @@ def scr(stock_df, df, index_name):
             except Exception as e:
                 print("Error Ouccured" + str(e))
                 time.sleep(10)
+                pass
         except Exception as e:
             print("Error Ouccured: " + str(e))
             time.sleep(10)
+            pass
     try:
         print(stock_df)
         return stock_df

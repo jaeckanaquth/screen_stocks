@@ -23,7 +23,6 @@ def posting(content):
     post.content = content
     post.mime_type = "text/html"
     post.id = 1553
-    post.date = datetime.now() + timedelta(days=7)
     post.post_status = 'publish'
     client.call(posts.EditPost(post.id, post))
     print(post, post.id)
