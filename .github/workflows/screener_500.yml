@@ -43,6 +43,8 @@ jobs:
         python add_to_gspread.py
 
   Nifty-500-2:
+    needs:
+      - Nifty-500-1
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 1
@@ -80,6 +82,8 @@ jobs:
         python add_to_gspread.py
 
   Nifty-500-3:
+    needs:
+      - Nifty-500-1
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 1
@@ -116,7 +120,9 @@ jobs:
       run: |
         python add_to_gspread.py
 
-  Nifty-500-4:
+  Nifty-500-4:    
+    needs:
+      - Nifty-500-1
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 1
@@ -154,6 +160,10 @@ jobs:
         python add_to_gspread.py
 
   Nifty-500-5:
+    needs:
+      - Nifty-500-2
+      - Nifty-500-3
+      - Nifty-500-4
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 1
