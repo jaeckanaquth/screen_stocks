@@ -22,7 +22,7 @@ def posting(content):
     }
     post.content = content
     post.mime_type = "text/html"
-    post.id = 1553
+    post.id = client.call(posts.NewPost(post))
     post.post_status = 'publish'
     client.call(posts.EditPost(post.id, post))
     print(post, post.id)
