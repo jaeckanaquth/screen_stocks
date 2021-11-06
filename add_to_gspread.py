@@ -67,7 +67,7 @@ if config.count == 4:
     except Exception as e:
         worksheet = sh.add_worksheet(title=name, rows="100", cols="7")
     published = pd.DataFrame(worksheet.get_all_records())
-    content = '<h3>Chosen from NIFTY 50</h3> <br /> <p><figure class="wp-block-table is-style-stripes">'
+    content = '<h3>Chosen from NIFTY 50</h3> <br /> <p><figure>'
     content = content + published.to_html() + '</figure></p>'
     name = "NIFTY 500"
     try:
@@ -75,7 +75,7 @@ if config.count == 4:
     except Exception as e:
         worksheet = sh.add_worksheet(title=name, rows="100", cols="7")
     published = pd.DataFrame(worksheet.get_all_records())
-    content = content + '<br /> <body> <h3>Chosen from NIFTY 500</h3> <br /> <p> <figure class="wp-block-table is-style-stripes">'
+    content = content + '<br /> <body> <h3>Chosen from NIFTY 500</h3> <br /> <p> <figure>'
     content = content + published.to_html() + "</figure> </p>"
     content = content + '''<pre>Publisher: QuthCodes </pre> <br /> <footer style="font-size:20%;"> <p>
     The information contained in this website is for general information purposes only. The information is provided by Quths.com and while we endeavour to keep the information up to date and correct, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk.
