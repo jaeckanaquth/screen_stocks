@@ -86,10 +86,10 @@ if config.count == 4:
     attachment_id = add_random_img.main_img()
 
     try:
-        posted = goes_to_wp.posting(content)
+        posted = goes_to_wp.posting(content, add_random_img.main_img())
         attach_img = goes_to_wp.attachment_img(attachment_id)
     except:
         time.sleep(20)
-        posted = goes_to_wp.posting(content)
+        posted = goes_to_wp.posting(content, add_random_img.main_img())
         attach_img = goes_to_wp.attachment_img(attachment_id)
     print(published)

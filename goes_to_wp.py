@@ -12,7 +12,8 @@ from wordpress_xmlrpc import WordPressPage
 
 client = Client(config.my_site, config.user, config.password)
 
-def posting(content):
+
+def posting(content, attachment_id):
     # print(heading)
     post = WordPressPost()
     post.title = "Stocks of the Day"
@@ -20,6 +21,7 @@ def posting(content):
         'post_tag': ["code", "python"],
         'category': ["stock codes"],
     }
+    post.thumbnail = attachment_id
     post.content = content
     post.mime_type = "text/html"
     post.id = client.call(posts.NewPost(post))
