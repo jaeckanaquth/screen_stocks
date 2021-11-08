@@ -4,6 +4,7 @@ if glob.glob("config.py"):
 else:
     import github_config as config
 import requests
+import goes_to_wp
 from bs4 import BeautifulSoup as bs
 
 user_agent = {'User-Agent': 'Mozilla/5.0'}
@@ -19,6 +20,6 @@ def main_img():
     novel_img = novelSoup.find("img", {"id": "mainph"})
     novel_img = novel_img['src']
     img_data = requests.get(novel_img).content
-    attachment_id = uploadImage(novel_img, img_data)
+    attachment_id = goes_to_wp.uploadImage(novel_img, img_data)
     return attachment_id
 
