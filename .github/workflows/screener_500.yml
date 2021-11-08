@@ -39,7 +39,7 @@ jobs:
         HEAD: "Chosen from NIFTY 500"
         COUNT: 0
       run: |
-        python add_to_gspread.py
+        python main.py
 
   Nifty-500-2:
     needs:
@@ -78,7 +78,7 @@ jobs:
         HEAD: "Chosen from NIFTY 500"
         COUNT: 1
       run: |
-        python add_to_gspread.py
+        python main.py
 
   Nifty-500-3:
     needs:
@@ -117,7 +117,7 @@ jobs:
         HEAD: "Chosen from NIFTY 500"
         COUNT: 2
       run: |
-        python add_to_gspread.py
+        python main.py
 
   Nifty-500-4:    
     needs:
@@ -156,7 +156,7 @@ jobs:
         HEAD: "Chosen from NIFTY 500"
         COUNT: 3
       run: |
-        python add_to_gspread.py
+        python main.py
 
   Nifty-500-5:
     needs:
@@ -197,4 +197,4 @@ jobs:
         HEAD: "Chosen from NIFTY 500"
         COUNT: 4
       run: |
-        python add_to_gspread.py
+        python main.py
