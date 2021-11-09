@@ -33,7 +33,7 @@ def screening(df, index_name):
     index_return = (index_df['Percent Change'] + 1).cumprod()[-1]
 
     # Find top 30% performing stocks (relative to the S&P 500)
-    for ticker in tickers:
+    for i, ticker in enumerate(tickers):
         # Download historical data as CSV for each stock (makes the process faster)
         df = pdr.get_data_yahoo(ticker, start_date, end_date)
         dct[ticker] = df
@@ -46,7 +46,7 @@ def screening(df, index_name):
         returns_multiples.extend([returns_multiple])
 
         print(
-            f'Ticker: {ticker}; Returns Multiple against NSE 500: {returns_multiple}\n')
+            f'{i}::Ticker: {ticker}; Returns Multiple against {index_name}: {returns_multiple}\n')
         time.sleep(1)
 
     # Creating dataframe of only top 30%
