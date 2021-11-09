@@ -103,8 +103,8 @@ def screening(df, index_name):
 
             # If all conditions above are true, add stock to exportList
             if(condition_1 and condition_2 and condition_3 and condition_4 and condition_5 and condition_6 and condition_7):
-                exportList = exportList.append({'Stock': stock, "RS_Rating": RS_Rating, "50 Day MA": moving_average_50, "150 Day Ma": moving_average_150,
-                                            "200 Day MA": moving_average_200, "52 Week Low": low_of_52week, "52 week High": high_of_52week}, ignore_index=True)
+                exportList = exportList.append({'Stock': stock, "RS_Rating": RS_Rating, "50 Day MA": moving_average_50, "150 Day Moving Average": moving_average_150,
+                                                "200 Day Moving Average": moving_average_200, "52 Week Low": low_of_52week, "52 week High": high_of_52week}, ignore_index=True)
                 print(stock + " made the Minervini requirements")
         except Exception as e:
             print(e)
