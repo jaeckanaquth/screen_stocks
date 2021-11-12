@@ -24,7 +24,7 @@ def screening(df, index_name):
     start_date = datetime.datetime.now() - datetime.timedelta(days=365)
     end_date = datetime.date.today()
     exportList = pd.DataFrame(columns=['Stock', "RS_Rating", "50 Day MA",
-                            "150 Day Ma", "200 Day MA", "52 Week Low", "52 week High"])
+                            "150 Day MA", "200 Day MA", "52 Week Low", "52 week High"])
     returns_multiples = []
 
     # Index Returns
