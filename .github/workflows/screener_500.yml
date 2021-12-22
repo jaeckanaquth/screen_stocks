@@ -2,8 +2,8 @@ name: Screener
 
 on:
   push:
-    schedule:
-      - cron: '0 0 * * 1-5'
+  schedule:
+    - cron: '0 0 * * 1-5'
 jobs:
   Nifty-500-1:
     runs-on: ubuntu-latest
