@@ -1,201 +1,201 @@
-name: Screener
+# name: Screener
 
-on:
-  push:
-  schedule:
-    - cron: '0 0 * * 1-5'
-jobs:
-  Nifty-500-1:
-    runs-on: ubuntu-latest
-    strategy:
-      max-parallel: 1
+# on:
+#   push:
+#   schedule:
+#     - cron: '0 0 * * 1-5'
+# jobs:
+#   Nifty-500-1:
+#     runs-on: ubuntu-latest
+#     strategy:
+#       max-parallel: 1
 
-    steps:
-    - uses: actions/checkout@v2
-    - name: Set up Python 3.x
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
+#     steps:
+#     - uses: actions/checkout@v2
+#     - name: Set up Python 3.x
+#       uses: actions/setup-python@v2
+#       with:
+#         python-version: '3.x'
 
-    - name: Add conda to system path
-      run: |
-        # $CONDA is an environment variable pointing to the root of the miniconda directory
-        echo $CONDA/bin >> $GITHUB_PATH
+#     - name: Add conda to system path
+#       run: |
+#         # $CONDA is an environment variable pointing to the root of the miniconda directory
+#         echo $CONDA/bin >> $GITHUB_PATH
 
-    - name: Install dependencies
-      run: |
-        conda env update --file environment.yml --name base
-        activate base
+#     - name: Install dependencies
+#       run: |
+#         conda env update --file environment.yml --name base
+#         activate base
 
-    # - name: Install dependencies 2
-    #   run: |
-    #     pip install -r requirements.txt
+#     # - name: Install dependencies 2
+#     #   run: |
+#     #     pip install -r requirements.txt
 
-    - name: Set Environments
-      env:
-        G_SECRETS: ${{ secrets.G_SECRETS }}
-        MY_SITE: ${{ secrets.MY_SITE }}
-        WP_USER: ${{ secrets.WP_USER }}
-        WP_PASSWORD: ${{ secrets.WP_PASSWORD }}
-        HEAD: "Chosen from NIFTY 500"
-        COUNT: 0
-      run: |
-        python main.py
+#     - name: Set Environments
+#       env:
+#         G_SECRETS: ${{ secrets.G_SECRETS }}
+#         MY_SITE: ${{ secrets.MY_SITE }}
+#         WP_USER: ${{ secrets.WP_USER }}
+#         WP_PASSWORD: ${{ secrets.WP_PASSWORD }}
+#         HEAD: "Chosen from NIFTY 500"
+#         COUNT: 0
+#       run: |
+#         python main.py
 
-  Nifty-500-2:
-    needs:
-      - Nifty-500-1
-    runs-on: ubuntu-latest
-    strategy:
-      max-parallel: 1
+#   Nifty-500-2:
+#     needs:
+#       - Nifty-500-1
+#     runs-on: ubuntu-latest
+#     strategy:
+#       max-parallel: 1
 
-    steps:
-    - uses: actions/checkout@v2
-    - name: Set up Python 3.x
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
+#     steps:
+#     - uses: actions/checkout@v2
+#     - name: Set up Python 3.x
+#       uses: actions/setup-python@v2
+#       with:
+#         python-version: '3.x'
 
-    - name: Add conda to system path
-      run: |
-        # $CONDA is an environment variable pointing to the root of the miniconda directory
-        echo $CONDA/bin >> $GITHUB_PATH
+#     - name: Add conda to system path
+#       run: |
+#         # $CONDA is an environment variable pointing to the root of the miniconda directory
+#         echo $CONDA/bin >> $GITHUB_PATH
 
-    - name: Install dependencies
-      run: |
-        conda env update --file environment.yml --name base
-        activate base
+#     - name: Install dependencies
+#       run: |
+#         conda env update --file environment.yml --name base
+#         activate base
 
-    # - name: Install dependencies 2
-    #   run: |
-    #     pip install -r requirements.txt
+#     # - name: Install dependencies 2
+#     #   run: |
+#     #     pip install -r requirements.txt
 
-    - name: Set Environments
-      env:
-        G_SECRETS: ${{ secrets.G_SECRETS }}
-        MY_SITE: ${{ secrets.MY_SITE }}
-        WP_USER: ${{ secrets.WP_USER }}
-        WP_PASSWORD: ${{ secrets.WP_PASSWORD }}
-        HEAD: "Chosen from NIFTY 500"
-        COUNT: 1
-      run: |
-        python main.py
+#     - name: Set Environments
+#       env:
+#         G_SECRETS: ${{ secrets.G_SECRETS }}
+#         MY_SITE: ${{ secrets.MY_SITE }}
+#         WP_USER: ${{ secrets.WP_USER }}
+#         WP_PASSWORD: ${{ secrets.WP_PASSWORD }}
+#         HEAD: "Chosen from NIFTY 500"
+#         COUNT: 1
+#       run: |
+#         python main.py
 
-  Nifty-500-3:
-    needs:
-      - Nifty-500-1
-    runs-on: ubuntu-latest
-    strategy:
-      max-parallel: 1
+#   Nifty-500-3:
+#     needs:
+#       - Nifty-500-1
+#     runs-on: ubuntu-latest
+#     strategy:
+#       max-parallel: 1
 
-    steps:
-    - uses: actions/checkout@v2
-    - name: Set up Python 3.x
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
+#     steps:
+#     - uses: actions/checkout@v2
+#     - name: Set up Python 3.x
+#       uses: actions/setup-python@v2
+#       with:
+#         python-version: '3.x'
 
-    - name: Add conda to system path
-      run: |
-        # $CONDA is an environment variable pointing to the root of the miniconda directory
-        echo $CONDA/bin >> $GITHUB_PATH
+#     - name: Add conda to system path
+#       run: |
+#         # $CONDA is an environment variable pointing to the root of the miniconda directory
+#         echo $CONDA/bin >> $GITHUB_PATH
 
-    - name: Install dependencies
-      run: |
-        conda env update --file environment.yml --name base
-        activate base
+#     - name: Install dependencies
+#       run: |
+#         conda env update --file environment.yml --name base
+#         activate base
 
-    # - name: Install dependencies 2
-    #   run: |
-    #     pip install -r requirements.txt
+#     # - name: Install dependencies 2
+#     #   run: |
+#     #     pip install -r requirements.txt
 
-    - name: Set Environments
-      env:
-        G_SECRETS: ${{ secrets.G_SECRETS }}
-        MY_SITE: ${{ secrets.MY_SITE }}
-        WP_USER: ${{ secrets.WP_USER }}
-        WP_PASSWORD: ${{ secrets.WP_PASSWORD }}
-        HEAD: "Chosen from NIFTY 500"
-        COUNT: 2
-      run: |
-        python main.py
+#     - name: Set Environments
+#       env:
+#         G_SECRETS: ${{ secrets.G_SECRETS }}
+#         MY_SITE: ${{ secrets.MY_SITE }}
+#         WP_USER: ${{ secrets.WP_USER }}
+#         WP_PASSWORD: ${{ secrets.WP_PASSWORD }}
+#         HEAD: "Chosen from NIFTY 500"
+#         COUNT: 2
+#       run: |
+#         python main.py
 
-  Nifty-500-4:    
-    needs:
-      - Nifty-500-1
-    runs-on: ubuntu-latest
-    strategy:
-      max-parallel: 1
+#   Nifty-500-4:    
+#     needs:
+#       - Nifty-500-1
+#     runs-on: ubuntu-latest
+#     strategy:
+#       max-parallel: 1
 
-    steps:
-    - uses: actions/checkout@v2
-    - name: Set up Python 3.x
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
+#     steps:
+#     - uses: actions/checkout@v2
+#     - name: Set up Python 3.x
+#       uses: actions/setup-python@v2
+#       with:
+#         python-version: '3.x'
 
-    - name: Add conda to system path
-      run: |
-        # $CONDA is an environment variable pointing to the root of the miniconda directory
-        echo $CONDA/bin >> $GITHUB_PATH
+#     - name: Add conda to system path
+#       run: |
+#         # $CONDA is an environment variable pointing to the root of the miniconda directory
+#         echo $CONDA/bin >> $GITHUB_PATH
 
-    - name: Install dependencies
-      run: |
-        conda env update --file environment.yml --name base
-        activate base
+#     - name: Install dependencies
+#       run: |
+#         conda env update --file environment.yml --name base
+#         activate base
 
-    # - name: Install dependencies 2
-    #   run: |
-    #     pip install -r requirements.txt
+#     # - name: Install dependencies 2
+#     #   run: |
+#     #     pip install -r requirements.txt
 
-    - name: Set Environments
-      env:
-        G_SECRETS: ${{ secrets.G_SECRETS }}
-        MY_SITE: ${{ secrets.MY_SITE }}
-        WP_USER: ${{ secrets.WP_USER }}
-        WP_PASSWORD: ${{ secrets.WP_PASSWORD }}
-        HEAD: "Chosen from NIFTY 500"
-        COUNT: 3
-      run: |
-        python main.py
+#     - name: Set Environments
+#       env:
+#         G_SECRETS: ${{ secrets.G_SECRETS }}
+#         MY_SITE: ${{ secrets.MY_SITE }}
+#         WP_USER: ${{ secrets.WP_USER }}
+#         WP_PASSWORD: ${{ secrets.WP_PASSWORD }}
+#         HEAD: "Chosen from NIFTY 500"
+#         COUNT: 3
+#       run: |
+#         python main.py
 
-  Nifty-500-5:
-    needs:
-      - Nifty-500-2
-      - Nifty-500-3
-      - Nifty-500-4
-    runs-on: ubuntu-latest
-    strategy:
-      max-parallel: 1
+#   Nifty-500-5:
+#     needs:
+#       - Nifty-500-2
+#       - Nifty-500-3
+#       - Nifty-500-4
+#     runs-on: ubuntu-latest
+#     strategy:
+#       max-parallel: 1
 
-    steps:
-    - uses: actions/checkout@v2
-    - name: Set up Python 3.x
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
+#     steps:
+#     - uses: actions/checkout@v2
+#     - name: Set up Python 3.x
+#       uses: actions/setup-python@v2
+#       with:
+#         python-version: '3.x'
 
-    - name: Add conda to system path
-      run: |
-        # $CONDA is an environment variable pointing to the root of the miniconda directory
-        echo $CONDA/bin >> $GITHUB_PATH
+#     - name: Add conda to system path
+#       run: |
+#         # $CONDA is an environment variable pointing to the root of the miniconda directory
+#         echo $CONDA/bin >> $GITHUB_PATH
 
-    - name: Install dependencies
-      run: |
-        conda env update --file environment.yml --name base
-        activate base
+#     - name: Install dependencies
+#       run: |
+#         conda env update --file environment.yml --name base
+#         activate base
 
-    # - name: Install dependencies 2
-    #   run: |
-    #     pip install -r requirements.txt
+#     # - name: Install dependencies 2
+#     #   run: |
+#     #     pip install -r requirements.txt
 
-    - name: Set Environments
-      env:
-        G_SECRETS: ${{ secrets.G_SECRETS }}
-        MY_SITE: ${{ secrets.MY_SITE }}
-        WP_USER: ${{ secrets.WP_USER }}
-        WP_PASSWORD: ${{ secrets.WP_PASSWORD }}
-        HEAD: "Chosen from NIFTY 500"
-        COUNT: 4
-      run: |
-        python main.py
+#     - name: Set Environments
+#       env:
+#         G_SECRETS: ${{ secrets.G_SECRETS }}
+#         MY_SITE: ${{ secrets.MY_SITE }}
+#         WP_USER: ${{ secrets.WP_USER }}
+#         WP_PASSWORD: ${{ secrets.WP_PASSWORD }}
+#         HEAD: "Chosen from NIFTY 500"
+#         COUNT: 4
+#       run: |
+#         python main.py
